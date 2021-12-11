@@ -75,7 +75,7 @@ button {
 
 /* Added hover rule */
 button:hover {
-  filter: brightness(160%);
+  filter: brightness(140%);
 }
 
 /* Added clicking animation */
