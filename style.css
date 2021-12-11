@@ -18,3 +18,47 @@ body {
   align-items: center;
   justify-content: center;
 }
+
+/* This helps to keep our quote centered and to wrap the text to make it easier to read. Also sets a transparent border around our quote with a box shadow to make it more visually appealing */
+.quote-container {
+  width: auto;
+  max-width: 900px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Utilizing rem to help maintain consistent and responsive design */
+.quote-text {
+  font-size: 2.75rem;
+}
+
+/* Will dynamically turn this on and off with JavaScript when needed for longer quotes */
+.long-quote {
+  font-size: 2rem;
+}
+
+/* Increase size of quote icon */
+.fa-quote-left {
+  font-size: 4rem;
+}
+
+/* additional styling for the author text */
+.quote-author {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* Media query: tablet or smaller */
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 10px;
+  }
+  
+  .quote-text {
+    font-size: 2.5rem;
+  }
+}
